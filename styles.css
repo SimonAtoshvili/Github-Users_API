@@ -1,0 +1,157 @@
+.container {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: hsl(222, 40%, 13%);
+}
+
+.content {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Head */
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+}
+
+.fa-sun {
+    margin-left: 10px;
+}
+
+/* Search Div */
+
+.search {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(224, 40%, 20%);
+}
+
+.fa-magnifying-glass {
+    font-size: 30px;
+    color: hsl(211, 100%, 50%);
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+    background-color: hsl(224, 40%, 20%);
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    border: none;
+}
+
+::placeholder {
+    color: hsl(0, 0%, 100%);
+}
+
+button {
+    height: 30px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: hsl(211, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Main Section */
+
+.main_section {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(224, 40%, 20%);
+    color: hsl(0, 0%, 100%);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 70%;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#join-time {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+#username {
+    margin: 20px 0;
+    color: hsl(211, 100%, 50%);
+}
+
+#bio {
+    margin: 30px 0;
+}
+
+/* Numbers */
+
+.numbers {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(222, 40%, 13%);
+}
+
+
+.nums p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.nums div {
+    text-align: center;
+    font-size: 700;
+    margin-top: 10px;
+}
+
+/* Details */
+
+.details {
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.details div {
+    display: flex;
+    width: 45%;
+    height: 45%;
+}
+
+.details div p {
+    margin-left: 10px;
+}
