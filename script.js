@@ -1,6 +1,7 @@
 const searchField = document.getElementById("search-field");
 const searchButton = document.getElementById("search-button");
-const dataUrl = "https://api.github.com/users"
+const mode = document.getElementById("mode");
+const dataUrl = "https://api.github.com/users/";
 
 const img = document.querySelector("img");
 const naame = document.querySelector("h1");
@@ -17,7 +18,7 @@ const office = document.getElementById("office");
 
 searchButton.addEventListener("click", function(){
     let val = searchField.value;
-    let userUrl = dataUrl + "/" + val;
+    let userUrl = dataUrl + val;
     let func = async () => {
         const response = await fetch(userUrl);
         const data = await response.json();
@@ -44,4 +45,25 @@ searchButton.addEventListener("click", function(){
     }
 
     func();
+})
+
+const container = document.querySelector(".container");
+const head = document.querySelector(".head");
+const search = document.querySelector(".search");
+const mainSec = document.querySelector(".main_section");
+const numbersDiv = document.querySelector(".numbers");
+
+mode.addEventListener("click", function(){
+    container.classList.toggle("container_light");
+    head.classList.toggle("head_light");
+    search.classList.toggle("search_light");
+    searchField.classList.toggle("input_light");
+    mainSec.classList.toggle("main_section_light");
+    numbersDiv.classList.toggle("numbers_light");
+})
+
+const searchIcon = document.querySelector(".fa-magnifying-glass");
+
+searchIcon.addEventListener("click", function(){
+    searchField.focus();
 })
