@@ -28,6 +28,10 @@
     margin-left: 10px;
 }
 
+#mode, button {
+    cursor: pointer;
+}
+
 /* Search Div */
 
 .search {
@@ -44,6 +48,7 @@
 .fa-magnifying-glass {
     font-size: 30px;
     color: hsl(211, 100%, 50%);
+    cursor: pointer;
 }
 
 input {
@@ -154,4 +159,32 @@ h1 {
 
 .details div p {
     margin-left: 10px;
+}
+
+/* Light Mode */
+
+.container_light {
+    background-color: hsl(200, 34%, 58%);
+}
+
+.head_light {
+    color: hsl(222, 40%, 13%);
+}
+
+.search_light {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.input_light {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(222, 40%, 13%);
+}
+
+.main_section_light {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(222, 40%, 13%);
+}
+
+.numbers_light {
+    background-color: hsl(200, 34%, 58%);
 }
